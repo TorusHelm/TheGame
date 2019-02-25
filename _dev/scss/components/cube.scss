@@ -1,0 +1,43 @@
+#cube {
+    width: 60px;
+    height: 60px;
+    // background-color: wheat;
+    margin-bottom: 100px;
+    border-radius: 100%;
+    position: relative;
+    box-shadow: inset 0px 0px 0 12px tomato;
+
+    &:after{
+
+        content: '';
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        background-color: tomato;
+    }
+
+    &:before{
+        
+        content: '';
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+        top: 0;
+        background-color: tomato;
+    }
+}
+
+#move, #moveReverse {
+    padding: 8px 16px;
+    background-color: green;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
